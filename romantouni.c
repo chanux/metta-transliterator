@@ -165,7 +165,7 @@ int messWithTheWord(wchar_t *wordIn, FILE *outputFile)
 			else{
 				if(i == 0)
 					wordOut[j++] = getVowelChar(wordIn[i]);
-				else if(wordIn[i-1] == L'\n')
+				else if(!isAlphabetChar(wordIn[i-1]))
 					wordOut[j++] = getVowelChar(wordIn[i]);
 				else if(getVowelSecondary(wordIn[i]) != L'0')
 					wordOut[j++] = getVowelSecondary(wordIn[i]);
