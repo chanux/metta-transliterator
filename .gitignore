@@ -1,3 +1,6 @@
 #Ignore binaries
 *.out
 *.o
+
+#Ignore Tests directory
+tests/
