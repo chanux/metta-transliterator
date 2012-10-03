@@ -5,7 +5,7 @@ This is a simple program to convert Tripitaka file written in metta font in to
 unicode. Metta font text can be found at http://metta.lk/tipitaka/index.html
 
 I collaborated with venerable Mettavihari to write this program. It's in working 
-state but according ven. Mettavihari there are some little fixes to be done all 
+state but according to bhikku there are some little fixes to be done all 
 over the place. Tipitaka is serious business :).
 
 Anguttara Nikaya text should be transliterated without a problem. At the time I 
@@ -13,10 +13,10 @@ dropped the ball on this project we were woking on Diga Nikaya.
 Then we both got busy :(
 
 You can compile the program with
-$ gcc -o romantouni.out romantouni.c
+$ gcc -o mettatr.out mettatr.c
 
 Then run
-./romantouni.out <input file> <output file>
+./mettatr.out <input file> <output file>
 
 The resources directory includes what I worked with.
 
@@ -30,7 +30,7 @@ $ iconv -f iso-8859-15 -t utf-8 file > output.file
 
 The converted file is found as Anguttara_Nikaya_1_UTF8.txt
 
-romantouni only works on utf-8 text. (The program name is actually misleading.
+mettatr only works on utf-8 text. (The program name is actually misleading.
 That's thanks to my poor knowledge of the whole thing :D).
 
 The program can now convert the utf8 text to sinhala unicode.
